@@ -1,11 +1,11 @@
 # go_grpc_sample_env
 
-https://qiita.com/gp333/items/24733ff4b95d9a4bb977
-
-
+### exec protoc
 ```
 protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=require_unimplemented_servers=false:. --go-grpc_opt=paths=source_relative proto/cat.proto
 ```
+
+### library
 ```
 $ tree
 .
@@ -25,6 +25,8 @@ $ tree
 
 4 directories, 9 files
 ```
+
+### gRPC exec
 ```
 go run server/main.go
 ```
